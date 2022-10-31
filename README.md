@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Keerthana P</h1>
+<h1 align="center">Hi 👋, I'm Kevin Chacko Abraham</h1>
 <h3 align="center"> Iam a MCA student at Amal jyothi College Of Engineering,Kottayam.</h3>
 
 <br>
@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning master of computer application
 
-- 📫 How to reach me keerthanap0310@gmail.com
+- 📫 How to reach me kevinchacko98@gmail.com
 
 - ⚡ Fun fact :- Love to travel
 
@@ -17,7 +17,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-  <a href="https://www.linkedin.com/in/keerthanap0310@gmailcom/"target="blank"><img align="center"
+  <a href="https://www.linkedin.com/in/kevinchacko98@gmail.com/"target="blank"><img align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
       alt="adam pithewan" height="30" width="40" /></a>
   
