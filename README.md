@@ -73,9 +73,21 @@ plt.scatter(x2,y2,marker='v',color='r')
 plt.title('Scatter Plot Example')
 plt.show()
     
-    4.
+    4.import numpy as np
+mx1 = np.array([[5, 10], [15, 20]])
+mx2 = np.array([[25, 30], [35, 40]])
+print("Matrix1 =\n",mx1)
+print("\nMatrix2 =\n",mx2)
+print ("\nAddition of two matrices: ")
+print (np.add(mx1,mx2))
+print ("\nSubtraction of two matrices: ")
+print (np.subtract(mx1,mx2))
+print ("\nMatrix Division: ")
+print (np.divide(mx1,mx2))
+print ("\nMultiplication of two matrices: ")
+print (np.multiply(mx1,mx2))
     
-    
+  
     5.from numpy import array
 from scipy.linalg import svd
 A = np.array([[1,2],[3,4],[5,6]])
@@ -89,7 +101,7 @@ print('\nV^T:',VT)
     6.
     
     
-    
+   10. 
       
       </p>
 
