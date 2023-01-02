@@ -73,6 +73,21 @@ plt.scatter(x2,y2,marker='v',color='r')
 plt.title('Scatter Plot Example')
 plt.show()
     
+    4.
+    
+    
+    5.from numpy import array
+from scipy.linalg import svd
+A = np.array([[1,2],[3,4],[5,6]])
+print("A: \n", A)
+
+U,s,VT=svd(A)
+print('\nU:',U)
+print('\ns:',s)
+print('\nV^T:',VT)
+    
+    6.
+    
     
     
       
