@@ -36,20 +36,7 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=kevincha98&theme=dark&background=0d1117&date_format=M%20j%5B%2C%20Y%5D" alt="adam-pw" /></p>
       <p>
-      package com.example.intentexampleapp;import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;import android.os.Bundle;
-import android.view.View;import android.widget.Button;
-
-public class MainActivity extends AppCompatActivity {Button goto_second_btn;
-
-    @Override protected void onCreate(Bundle savedInstanceState) {
-     super.onCreate(savedInstanceState);setContentView(R.layout.activity_main);
-
-        goto_second_btn= findViewById(R.id.goto_second_btn);goto_second_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {Intent intent= new Intent(getApplicationContext(), SecondActivity.class);
-                startActivity(intent);}  });}}
+    
       
       </p>
 
