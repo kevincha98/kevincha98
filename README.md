@@ -119,6 +119,20 @@ print("KNN model accuracy(in %):", metrics.accuracy_score(Y_test, y_pred)*100)
 plt.plot(x,y)
 plt.show
     
+    7.from sklearn.datasets import load_iris
+iris = load_iris()
+X = iris.data
+y = iris.target
+from sklearn.model_selection import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split(df[data.feature_names], df['target'],
+random_state=42,test_size=0.1)
+from sklearn.naive_bayes import GaussianNB
+gnb = GaussianNB()
+gnb.fit(x_train,y_train)
+y_pred = gnb.predict(X_test)
+from sklearn import metrics
+print('Gaussian Naive Bayes model accuracy(in%):', metrics.accuracy_score(y_text,y_pred)*100)
+    
     
    10. 
       
