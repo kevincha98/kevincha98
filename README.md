@@ -36,6 +36,44 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=kevincha98&theme=dark&background=0d1117&date_format=M%20j%5B%2C%20Y%5D" alt="adam-pw" /></p>
       <p>
+    1.import pandas as pd
+s1=pd.DataFrame({'RollNo':['s1','s2','s3','s4','s5'], 
+                   'Name':['Kevin','Rahul','Sredev','Arun','Mithula'],
+                   'Age':['25','23','23','23','24'],
+                 'marks':[50,78,80,90,89]})
+print(s1)
+    s1[s1['marks']>80]
+    print(s1.head(2))
+    s1[s1['Name'].str.startswith('M')]
+    
+    2.import pandas as pd
+import numpy as np
+print(pd.Series(np.array([1,2,3,4,5]),index=['a','b','c','d','e']))
+    
+    3.import matplotlib.pyplot as plt
+x=[20,23,43,54]
+y=[25,30,35,40]
+
+plt.plot(x,y)
+plt.show()
+    
+    import matplotlib.pyplot as plt
+x1=[20,23,43,54]
+y1=[25,30,35,40]
+
+plt.bar(x1,y1,label="blue bar", color='b')
+
+plt.show()
+    
+    import matplotlib.pyplot as plt
+x2=[20,23,43,54]
+y2=[25,30,35,40]
+
+plt.scatter(x2,y2,marker='v',color='r')
+plt.title('Scatter Plot Example')
+plt.show()
+    
+    
     
       
       </p>
