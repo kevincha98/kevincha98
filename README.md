@@ -98,7 +98,26 @@ print('\nU:',U)
 print('\ns:',s)
 print('\nV^T:',VT)
     
-    6.
+    6.from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn import metrics
+from sklearn.datasets import load_iris
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = load_iris()
+df = pd.DataFrame(data.data, columns=data.feature_names)
+df['target'] = data.target
+X_train, X_test, Y_train, Y_test = train_test_split(df[data.feature_names], df['target'],
+random_state=42,test_size=0.1)
+clf = KNeighborsClassifier(n_neighbors = 5)
+clf.fit(X_train, Y_train)
+y_pred=clf.predict(X_test)
+# comparing actual response values (y_test) with predicted response values (y_pred)
+print("KNN model accuracy(in %):", metrics.accuracy_score(Y_test, y_pred)*100)
+plt.plot(x,y)
+plt.show
     
     
    10. 
