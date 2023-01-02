@@ -132,6 +132,21 @@ gnb.fit(x_train,y_train)
 y_pred = gnb.predict(X_test)
 from sklearn import metrics
 print('Gaussian Naive Bayes model accuracy(in%):', metrics.accuracy_score(y_text,y_pred)*100)
+
+8.import numpy as np
+from sklearn.linear_model import LinearRegression
+x=[[12,12],[32,56],[56,67]]
+y=[4,23,1]
+x,y=np.array(x),np.array(y)
+model=LinearRegression().fit(x,y)
+r_sq=model.score(x,y)
+
+print(f"coefficient:{r_sq}")
+print(f"intercept:{model.intercept_}")
+print(f"coefficient:{model.coef_}")
+
+y_pred=model.predict(x)
+print(f"the predicted response:{y_pred}")
     
     
    10. 
