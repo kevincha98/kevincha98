@@ -148,8 +148,60 @@ print(f"coefficient:{model.coef_}")
 y_pred=model.predict(x)
 print(f"the predicted response:{y_pred}")
     
+    9.import matplotlib.pyplot as plt
+from sklearn.tree import DecisionTreeClassifier
+    
     
    10. 
-      
+      from sklearn.cluster import KMeans
+import pandas as pd
+from matplotlib import pyplot as plt
+df = pd.read_csv(&quot;income.csv&quot;)
+plt.scatter(df.Age,df[&#39;Income($)&#39;])
+    
+    
+    km = KMeans(n_clusters=3)
+y_predicted = km.fit_predict(df[[&#39;Age&#39;,&#39;Income($)&#39;]]) df[&#39;cluster&#39;]=y_predicted
+df1 = df[df.cluster==0] df2 = df[df.cluster==1] df3 = df[df.cluster==2]
+plt.scatter(df1.Age,df1[&#39;Income($)&#39;],color=&#39;green&#39;) plt.scatter(df2.Age,df2[&#39;Income($)&#39;],color=&#39;red&#39;)
+plt.scatter(df3.Age,df3[&#39;Income($)&#39;],color=&#39;black&#39;)
+plt.scatter(km.cluster_centers_[:,0],km.cluster_centers_[:,1],color=&#39;purple&#39;,marker=&#39;*&#39;,label=&#39;centroid&#39;)
+plt.legend()
+    
+    12.import requests
+from bs4 import BeautifulSoup
+URL = &quot;http://www.ajce.in&quot;
+r = requests.get(URL)
+soup = BeautifulSoup(r.content, &#39;html5lib&#39;)
+print(soup.prettify())
+    
+    13.import nltk
+from nltk.util import ngrams
+text = &quot;this is a very good book to study&quot;;
+Ngrams = ngrams(sequence=nltk.wordpunct_tokenize(text), n=3)
+for grams in Ngrams:
+ print(grams)
+    
+    14.import nltk
+from nltk.tag import DefaultTagger
+exptagger = DefaultTagger(&#39;NN&#39;)
+exptagger.tag_sents([[&#39;Hi&#39;, &#39;,&#39;], [&#39;How&#39;, &#39;are&#39;, &#39;you&#39;, &#39;?&#39;]])
+    
+    import nltk
+from nltk.tag import untag
+untag([(&#39;Tutorials&#39;, &#39;NN&#39;), (&#39;Point&#39;, &#39;NN&#39;)])
+    
+    sentence = &quot;&quot;&quot;At eight o&#39;clock on Thursday morning
+Arthur didn&#39;t feel very good.&quot;&quot;&quot;
+tokens = nltk.word_tokenize(sentence)
+tagged = nltk.pos_tag(tokens)
+print(tagged)
+    
+    text =&quot;learn php from guru99 and make study easy&quot;.split()
+print(&quot;After Split:&quot;,text)
+tokens_tag = nltk.pos_tag(text)
+print(&quot;After Token:&quot;,tokens_tag)
+    
+    
       </p>
 
