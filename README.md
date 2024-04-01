@@ -13,7 +13,7 @@
 
 - 📫 How to reach me kevinchacko98@gmail.com
 
-- ⚡ Fun fact :- Love to travel
+- ⚡ Fun fact :- Love to travel ,Trucking
 
 <br>
 
